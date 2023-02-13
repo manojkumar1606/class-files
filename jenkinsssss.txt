@@ -1,0 +1,11 @@
+sudo apt-get update
+sudo apt-get install tomcat9
+sudo apt-get install tomcat9-admin
+cd/etc/tomcat9/
+ls
+tomcat-users.xml
+sudo vim tomcat-user.xml
+<user username="training" password="sunilsunil" roles="manager-script,manager-status,manager-gui"/>
+:wq
+sudo service tomcat9 restart
+http://private_ip:8080
