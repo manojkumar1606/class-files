@@ -1,0 +1,18 @@
+sudo apt update
+
+sudo apt-get install openjdk-11-jdk -y
+{if not install java}
+
+java -version
+
+wget https://get.jenkins.io/war-stable/2.375.2/jenkins.war
+
+ip --a
+{copy the ip of the vm}
+
+java -jar jenkins.war
+{copy the key to give the jenkins login}
+
+add the "ip:8080" in web browser
+{to get jenkins login}
+
